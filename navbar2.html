@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b6244a3733.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav id="menu">
+
+            <h1>logo</h1>
+
+        <ul id="list">
+            <li>home</li>
+            <li>about</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <div class="icon" id="bar" onclick="fn()">
+            <i class="fa-solid fa-bars"></i>
+            
+    </div>
+    <div class="crs" id="cross" onclick="fn1()" >
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    
+    </nav>
+</header>
+</body>
+<script>
+       function fn()
+       {
+        document.getElementById('menu').style.backgroundColor="brown";
+        document.getElementById('bar').style.display="none";
+        document.getElementById('cross').style.display="block";
+        document.getElementById('list').style.display = "block";
+
+       }  
+       function fn1()
+       {
+        document.getElementById('menu').style.backgroundColor="gry";
+        document.getElementById('cross').style.display="none";
+        document.getElementById('bar').style.display="block";
+        document.getElementById('list').style.display = "none";
+       }
+</script>
+</html>

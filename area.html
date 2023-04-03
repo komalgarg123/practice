@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fc()">click</button>
+    <script>
+      function fn()
+      {  var a=[3,2,9,8];
+        var i,j,temp;
+        for(i=0; i<a.length; i++)
+        {
+            for(j=i+1; j<a.length; j++)
+            {
+                if(a[i]>a[j])
+                {
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+
+
+document.write(a);
+        for(i=0; i<a.length; i++)
+        {
+            document.write(a[i]);
+        }
+      
+      fn();
+     
+
+
+//       function fc()
+//       {
+//         var a,array
+//        count=0;
+//        a=6;
+//     //    a=parseInt(prompt("enter the value"));
+//         array =[1,5,7,1,];
+//         for (var i=0; i<array.length; i++)
+//         {
+//             for(var j=i+1; j<array.length; j++)
+//             {
+//                if(a==array[i]+array[j])
+//                {
+//                count++;
+//                }
+//             }
+
+//         }
+//         document.write(count);
+//     }
+        
+    //   function fc(){
+    //     var a,array
+    //  count=0;
+    //     a=5;
+    //     a=parseInt(prompt("enter the value"));
+    //     array =[1,2,3,4,5];
+    //     for (var i=0; i<array.length; i++)    
+    // {
+    //         for(var j=i+1; j<array.length; j++) 
+            
+    //         for(j=i+1; j<a.length; j++)
+    //         {
+    //             if(a[i]>a[j])
+    //             {
+    //                  temp=a[i];
+    //                a[i]=a[j];
+    //                a[j]=temp;
+    //            }
+    //            document.write(count);
+    //     }
+
+    //   }      
+     
+    </script>
+</body>
+</html>

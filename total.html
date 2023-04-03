@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          /* border-collapse: collapse; */
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    congratulations.. <input type="text"  id="congratulations">
+    Miss.... <input type="text" id="mr">
+    
+    <button onclick="fn()">click</button> 
+    <p id="prgh"></p>
+      <br>
+      <label for="due date:">due date:</label>
+    <input type="text" id="duedate"><br>
+    <label for="intsallment:">intsallment:</label>
+    <input type="text" id="intsallment"><br>
+    <label for=" Mode of payment :" > Mode of payment :</label>
+   <input type="text" id="Modeofpayment"><br>
+   <label for="Status :" >Status :</label>
+    <input type="text" id="Status"><br>
+    <label for="Remarks:">Remarks:</label>
+    <input type="text" id="Remarks"><br>
+      <!-- status:<input type="text"><br><br> -->
+      <button value="submit" onclick="fc()">submit</button>
+      <br><br>
+    
+    <table>
+        <tr>
+          <th>S.No</th>
+          <th >Due Date</th>
+          <th>Installment</th>
+          <th>Mode of payment</th>
+          <th>Status</th>
+          <th>Remarks</th>
+        </tr>
+        <tr>
+          <td >0</td>
+          <td id="d1"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          
+          <td>0</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+            
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+          </tr>
+          <tr>
+            
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+          </tr>
+          <tr>
+            
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        
+          </tr>
+          <tr>
+            
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+          </tr>
+          <tr>
+            
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+          </tr>
+          <tr>
+            
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+          </tr>
+     
+          
+      </table>
+      <br>
+      
+   
+    <script>
+        function fn(){
+           var a,b,c;
+           a=document.getElementById('congratulations').value;
+           b=document.getElementById('mr').value;
+           var c;
+           c=`${a} <br><br> Miss. ${b} <br> for getting Admission in(Advanced certification in web designing +SEO)at TGC <br> animation & Multimedia,Jaipur <br> Total coures fees of Rs 35,000 <br> Coures fees offered: Rs 30,000(Sibling Discounts) <br><br> His/her cleared or upcoming monthly paid/due payment details are as follows `
+           document.getElementById('prgh').innerHTML=c;
+           
+        }
+        
+        
+         var a,b,c,d,e,f;
+        function fc(){
+            a=document.getElementById('d1').value=document.getElementById('duedate').value;
+            b=`${a}`
+            document.getElementById("duedate").innerHTML=b;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #one{
+            border: 1px solid black;
+            width: 800px;
+            height: 500px;
+         
+            background-color: aqua;
+        }
+        #two{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            
+            
+        }
+        #three{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(55, 51, 51);
+            margin-top: 37%;
+            
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <div id="two">
+            
+        </div>
+        <div id="three">
+            
+        </div>
+    </div>
+    <p><button onclick="fc()">Click Me</button></p> 
+
+</body>
+<script>
+   function fc() {
+  let id = null;
+  const elem = document.getElementById("one"); 
+  const muki = document.getElementById("ko"); 
+  
+    
+
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+
+    }
+  }
+   }
+</script>
+</html>

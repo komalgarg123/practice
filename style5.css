@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav .menmenu{
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+}
+nav .menmenu  li a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    transition: 0.5s ease;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+
+}
+nav .menmenu  li a:hover{
+    background-color: orangered;
+
+}
+nav .openmenu{
+    font-size: 1.1rem;
+    margin-top: 15px;
+    display: none;
+}
+nav .menmenu .closemenu, .icons i{
+    font-size:2rem ;
+    display: none;
+    cursor: pointer;
+}
+nav .logo{
+    margin: 6px;
+    cursor: pointer;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+@media screen and (max-width:600px ){
+    body{
+     /* background-color: aqua; */
+    }
+    nav .menmenu{
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(213, 17, 50);
+        transition: top 1s ease 0;
+        display: none;
+    }
+    nav .menmenu .closemenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    
+    nav .openmenu{
+        display: block;
+    }
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+    nav .menmenu li a:hover{
+        background: none;
+        color: orangered;
+    }
+    
+}

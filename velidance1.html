@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name: <input type="text" id="name">  <br><br>
+    Adress: <input type="text" id="adress">  <br><br>
+    Contect: <input type="text" id="contect"> <br><br>
+    hide:  <input type="checkbox" onclick="fc()">
+</body>
+<script>
+    function fc(){
+        var a,b,c;
+        a=document.getElementById("name");
+        b=document.getElementById("adress");
+        c=document.getElementById("contect");
+
+        if(a.type=="text" || b.type=="text" || c.type=="text"){
+            a.type="password";
+            b.type="password";
+            c.type="password";
+        }
+        else{
+            a.type="text";
+            b.type="text";
+            c.type="text";
+        }
+        }
+    
+</script>
+</html>

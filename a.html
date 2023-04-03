@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b6244a3733.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    nav{
+        background-color: #AD0C98;
+      
+        display: flex;
+     
+     
+       
+        align-items: center;
+    }
+    .nav-list{
+        display: flex;
+   
+      
+    
+    }
+    .nav-list li{
+        padding: 20px;
+        list-style: none;
+        align-items: center;
+        }
+    .nav-list li a{
+        color: black;
+        text-decoration: none;
+    }
+    .icon{
+        display: none;
+    }
+    .cross{
+        display: none;
+    }
+    @media screen and (max-width:600px) {
+        .nav-list{
+            display: none;
+            /* justify-content: space-around; */
+        }
+        .icon{
+            display: block;
+            
+        }
+        nav{
+        background-color: #AD0C98;
+      
+        display: flex;
+       
+        align-items: center;
+    }
+       
+    }
+</style>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">PROGRAM</a></li>
+            <li><a href="">PHOTO GELLARY</a></li>
+            <li><a href="">FAMILY</a></li>
+            <li><a href="">CONTECT</a></li>
+
+        </ul>
+        <div class="icon" id="icn">
+            <i class="fa-solid fa-bars"></i>
+            
+        </div>
+        <div class="cross" id=" crx">
+            <i class="fa-solid fa-xmark"></i>
+            
+        </div>
+    </nav>
+    
+    
+</body>
+</html>

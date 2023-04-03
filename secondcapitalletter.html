@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name : <input type="text" id="name" onchange="validate_name()"><br>
+    <button onclick="check_name()">click</button>
+
+</body>
+ <script>
+    function check_name()
+        {
+    var str=document.getElementById("name").value;
+                var words = str.split(" "); 
+                for (var i=0 ; i < words.length ; i++)
+                {                                     
+                    var testwd = words[i]; 
+                    var lastletter =testwd.substr(0,-1);
+                      var secLet = testwd.substr(3,3); 
+                     var rest = testwd.substr(1, testwd.length -1) 
+                    words[i] =lastletter + secLet.toUpperCase() + rest 
+                   
+                   } 
+                var mixture=words.join(" "); 	
+                
+                document.getElementById("name").value=mixture;
+                
+                 
+                
+                }
+            </script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!DOCTYPE html>  
+<html>     
+   <head>  
+      <!-- <title>JavaScript Animation</title>     -->
+      <!-- <h1>JavaScript Animation</h1>       -->
+
+<body>
+
+    
+    <button onclick="moveRight()">click</button>
+    
+    <img src="train.webp" alt=""  id="myImage">
+     
+     
+       
+    <button onclick="moveleft()">click</button>
+
+      <img src="train.webp" alt=""  id="Image">
+
+      <script type = "text/javascript">  
+        
+        var kajalkaboyfriend = null;  
+        function init() {  
+            kajalkaboyfriend = document.getElementById('myImage');  
+            kajalkaboyfriend.style.position= 'relative';   
+            kajalkaboyfriend.style.left = '0px';   
+        }  
+        function moveRight() {  
+            kajalkaboyfriend.style.left = parseInt(kajalkaboyfriend.style.left) + 10 + 'px';  
+        }  
+        // window.onload = init;  
+     //-->  
+    
+  var komal = null;
+    function ab() {
+komal=document.getElementById('Image');
+    komal.style.position='relative';
+    komal.style.top='0px';
+    
+    }
+    function moveleft() {
+        komal.style.top = parseInt(komal.style.top) + 10 + 'px';  
+    }
+    window.onload = init;   
+   
+   </script>
+      
+</body>
+</html>

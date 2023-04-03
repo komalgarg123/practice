@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function getReport()
+{var a,b,c,d,e;
+ a=Number(document.getElementById('txtEnglish').value);
+ b=Number(document.getElementById('txtKannada').value);
+ c=Number(document.getElementById('txtMaths').value);
+ d=Number(document.getElementById('txtScience').value);
+ e=parseInt(a+b+c+d);
+ if(a+b+c+d){
+     document.getElementById('txtTotalMarks').value=e;
+ }
+ var a,b,c,d,e;
+ a=Number(document.getElementById('txtEnglish').value);
+ b=Number(document.getElementById('txtKannada').value);
+ c=Number(document.getElementById('txtMaths').value);
+ d=Number(document.getElementById('txtScience').value);
+ e=parseInt(a+b+c+d);
+ if(e/=10*20){
+    document.getElementById('txtAvgMarks').value=e;
+ }
+ var a,b,c,d,e;
+ a=Number(document.getElementById('txtEnglish').value);
+ b=Number(document.getElementById('txtKannada').value);
+ c=Number(document.getElementById('txtMaths').value);
+ d=Number(document.getElementById('txtScience').value);
+ e=parseInt(a+b+c+d);
+ if(a>50|| b>50|| c>50|| d>50){
+    document.getElementById('txtGrade').value="A"
+ }
+ else{
+    document.getElementById('txtGrade').value="B"
+ }
+ var a,b,c,d,e;
+ a=Number(document.getElementById('txtEnglish').value);
+ b=Number(document.getElementById('txtKannada').value);
+ c=Number(document.getElementById('txtMaths').value);
+ d=Number(document.getElementById('txtScience').value);
+ e=parseInt(a+b+c+d);
+ if (a>49|| b>49|| c>49|| d>49){
+    document.getElementById('txtResult').value="pass";
+ }
+ else{
+    document.getElementById('txtResult').value="failed"
+ }
+ var f,g;
+ f=document.getElementById('txtName').value;
+ g=document.getElementById('txtClass').value;
+  document.getElementById('txtStudentName').value=f;
+  document.getElementById('txtStudentClass').value=g;
+}
+</script>
+</body>
+</html>

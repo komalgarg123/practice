@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    address.. <input type="text"  id="address">
+    friends name.. <input type="text" id="friends">
+    your name.. <input type="text" id="name">
+    <button onclick="fn()">click</button> 
+    <p id="prgh"></p>
+    
+    <script>
+     function fn(){
+        var a,b, c,d
+        a=document.getElementById('address').value;
+        b=document.getElementById('friends').value;
+        c=document.getElementById('name').value;
+        var d;
+        d=`${a} <br> Dear ${b} <br> How have you been?hope you are doing good. what about your family?I hope they are also doing great! i m writing this letter to ask you why you are notcoming to collage for the last four days? <br>is everthing stable? whats the mater?you are not in college for last for dayes i hope you dont have any illens. the class teacher was asking about you. As you know  there was pratical yesterday and you miss that too.<br>Kinds regards <br> your fathfully<br>${c}.`
+        document.getElementById('prgh').innerHTML=d;
+     }
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="table()">click</button>
+    <script>
+        function fn()
+        {
+            var a,b,count=10;
+
+            a=1;
+            b=1;
+            while(a<=4)
+            {
+                while(b<=a)
+                {
+                    document.write(b);
+                    b++;
+                   // count--;
+                }
+                document.write("<br>");
+                b=1;
+                a++;
+
+            }
+
+           // document.write(count); 
+        }
+
+        function table()
+        {
+            var a,b;
+            a=1;
+            b=Number(prompt("enter the no"));
+
+            while(b>=1)
+            {
+            while(a<=10)
+            {
+                var c=a*b;
+                a++;
+                document.write(sum);
+                document.write("<br>");
+            }
+            a=1;
+            b--;
+            document.write("<br>");
+        }
+        document.write(5*50);
+        }
+    </script>
+</body>
+</html>

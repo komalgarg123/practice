@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    name: <input type="text" id="d1"><br>
+    no: <input type="text" id="d2"><br>
+    <button ondblclick="fc()">click</button>
+</body>
+<script>
+    function fc(){
+        // var a,b;
+        // a=document.getElementById('d1').value;
+        // b=document.getElementById('d2').value;
+        // if(a==""){
+        //     alert("enter the name.")
+        //     return false;
+        // }
+        // if(a==""){
+        //     alert("enter the name.")
+        //     return false;
+        // }
+        // return true;
+        
+            var a,b;
+            a=document.getElementById("d1").value;
+            if(a==""){
+                alert("enter the no.");
+
+            }
+            else{
+                var b="^[0-9]*$";
+                var c=a.match(b);
+                if(c==null){
+                    alert("enter the no.")
+                    document.getElementById("d1").value="";
+                    document.getElementById("d1").focus();
+                }
+            }
+            var a,b;
+            b=document.getElementById("d2").value;
+            if(a==""){
+                alert("enter the no.");
+
+            }
+            else{
+                var c="^[0-9]*$";
+                var d=a.match(c);
+                if(d==null){
+                    alert("enter the no.")
+                    document.getElementById("d2").value="";
+                    document.getElementById("d2").focus();
+                }
+            }
+    }
+</script>
+</html>

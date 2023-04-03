@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+              font-size: 1.32rem;
+              padding: 10px 10px;  
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>                                
+</head>
+<body>
+    <div>
+    Date: <input type="date" id="date">
+    <br>
+    <br>
+    NAME: <input type="text" placeholder="Enter your name" id="name">
+    <br>
+    <br>
+    Course: <input type="text"  id="course">
+    <br>
+    <br>
+     Fees: <input type="text"  id="fees">
+     <br>
+     <br>
+     Installment: <input type="text"  id="Installment">
+     <br>
+     <br>
+     Mode Of Payment: <input type="text" id="Payment">
+     <br>
+     <br>
+     Status: <input type="text" id="status">
+     <br>
+     <br>
+     Remark: <input type="text" id="remark">
+     <br>
+     <br>
+    </div>
+     <button onclick="fn()">Submit</button>
+     <p id="d1"></p>
+     
+  <script>
+    function fn()
+    {
+        var a,b,c,d,e,f,g,h,i;
+       a=document.getElementById("date").value;
+       b=document.getElementById("name").value;
+       c=document.getElementById("course").value;
+       d=document.getElementById("fees").value;
+       e=document.getElementById("Installment").value;
+       f=document.getElementById("Payment").value;
+       g=document.getElementById("status").value;
+       h=document.getElementById("remark").value;
+      i=`${a} <br> Course Fee Payment Details <br> Congratulations! <br> Mr./ Miss. ${b}
+      <br> for getting Admission in(Advanced Certification in ${c}) at TGC Animation & Multimedia Jaipur <br> Total Course fees of Rs ${d} <br> <br> 
+      His/Her cleared or upcoming monthly paid/due payment details are as follows
+      <br> 
+      <br>
+      <table border="2px">
+        <tr>
+            <td>
+                S.No.
+                     </td>
+        <td>
+                Due Date
+                     </td>
+          <td>
+                Installment
+                     </td>
+         <td>
+               Mode of Payment
+                      </td>
+         <td>
+                Status
+                    </td>
+         <td>
+                Remarks
+                     </td>
+            </tr>
+          <tr>
+            <td>O</td>
+             <td>07.12.2022</td>   
+             <td>1000</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr> 
+            <tr>
+            <td>1</td>
+             <td>19.12.2022</td>   
+             <td>9000</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+            <tr>
+            <td>2</td>
+             <td>20.1.2023</td>   
+             <td>${e}</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+            <tr>
+            <td>3</td>
+             <td>20.2.2023</td>   
+             <td>${e}</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+            <tr>
+            <td>4</td>
+             <td>20.2.2023</td>   
+             <td>${e}</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+            <tr>
+            <td>4</td>
+             <td>20.3.2023</td>   
+             <td>${e}</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+            <tr>
+            <td>5</td>
+             <td>20.4.2023</td>   
+             <td>${e}</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+            <td>6</td>
+             <td>20.5.2023</td>   
+             <td>${e}</td>
+             <td>${f}</td>
+             <td>${g}</td>
+             <td>${h}</td>
+            </tr>
+        </table>  `
+        document.getElementById("d1").innerHTML=i;
+    }
+  </script>
+</body>
+</html>

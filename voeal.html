@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <button onclick="fn()">click</button>  
+ 
+ <script>
+    function fn()
+    {
+        var str="komal";
+        var a=0;
+        var cnt = 0;
+        var s=str.length;
+        // document.write(str[3]);                                       
+     
+        
+        while(a<s)
+        {
+            if(str[a]=='a'|| str[a]=='e'|| str[a]=='i'|| str[a]=='o'|| str[a]=='u')
+            {
+                // document.write(str[a]);
+                cnt=cnt+1
+            }
+             a++;
+             
+        }
+        document.write(cnt);
+    }
+    
+      
+    
+ </script>
+</body>
+</html>

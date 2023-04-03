@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(){
+            var g="kajal gangwani";
+            document.write(g.slice(1,7))
+        }
+        fn();
+        function hh(){
+            const person=[
+                {firstname:"kajal",lastname:"sharma"},
+                {firstname:"ravi",lastname:"sharma"}
+            ]
+                
+            var ss=person.map(getfullname)
+            document.write(ss);
+            function getfullname(item){
+                return[item.firstname,item.lastname].join("");
+                
+            }
+            document.write("<br>")
+        }
+        hh();
+       
+        function hj(){
+            var a=[4,5,6];
+            var b=[7,8,9];
+         var c=a.concat (b);
+            document.write(c);
+            document.write("<br>")
+        }
+        hj();
+        function aa(){
+            var str="shubham mittal"
+            document.write(str.charAt(3));
+        }
+        aa();
+     
+
+    </script>
+</body>
+</html>

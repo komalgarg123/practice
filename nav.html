@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b6244a3733.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     .topnav{
+        overflow: hidden;
+        background-color: black;
+        text-align: right;
+     }
+     .left-cont{
+        position: relative;
+        color: white;
+        float: left;
+        font-size: 30px;
+        padding: 27px;
+        font-weight: bold;
+     }
+     .topnav a{
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        padding: 27px;
+
+     }
+     .topnav .Icon{
+        display: none;
+     }
+       @media screen and (max-width:600px) {
+        .topnav a{
+            display: none;
+        }
+        .topnav a.Icon{
+            display: block;
+            float: right;
+        }
+       }
+       @media screen and (max-width:600px) {
+        .topnav.responsive{
+            padding: 60px;
+        }
+        .topnav.responsive .Icon{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a{
+            display: block;
+            text-align: center;
+        }
+       }
+    </style>
+</head>
+<body>
+   <div class="topnav" id="menu">
+    <div class="left-cont">
+        LOGO
+    </div>
+   
+        <a href="#">HOME</a>
+        <a href="#">HOME</a>
+        <a href="#">HOME</a>
+        <a href="#">HOME</a>
+        <a href="#">HOME</a>
+        <a href="#" class="Icon"
+            onclick="fn()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    
+   </div>
+   <script>
+   function fn(){
+    var x=document.getElementById("menu");
+    if(x.className=="topnav"){
+        x.className+="responsive"
+    }
+    else{
+        x.className="topnav"
+    }
+   }
+   </script>
+</body>
+</html>

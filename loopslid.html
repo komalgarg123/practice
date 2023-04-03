@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fb()">click</button>
+    <button onclick="fc()">click</button>
+    <button onclick="f()">click</button>
+    <button onclick="fd()">click</button>
+    <button onclick="fv()">click</button>
+    <button onclick="d()">click</button>
+    <script>
+        function fb(){
+            var b;
+            for(b=1; b<=10; b++)
+            {
+                document.write(b);
+                document.write("<br>");
+            }
+        }
+
+        function fc(){
+            var b;
+            var sum=0;
+            for(b=1; b<=10; b++)
+            {
+              sum=sum+b;
+            }
+            Document.write(sum);
+        }
+       
+        function f()
+        {
+            var s=[1,2,3,4,5];
+            document.write(s[2]+s[1]);
+        }
+
+        function fd(){
+            var b,c,d
+            c=parseInt(prompt('enter the number'))
+            for(b=1; b<=c; b++)
+            {
+                
+             d=d*b
+
+            }
+            document.write(d);
+                // document.write("<br>");
+        }
+        function fv()
+        {
+            var  s=[1,2,5,4,3];
+            var max=s[0];
+            for(var i=1; i<s.length; i++)
+            {
+                if(max<s[i])
+                {
+                    max=s[i];
+                }
+            }
+            document.write(max);
+        }
+        function d()
+        {
+            var  s=[1,2,5,6,3];
+            var a=2
+            var max=s[0];
+            a=parseInt(prompt('enter the number'))
+            for(var i=2; i<s.length; i++){
+                          
+                if(a==s[i]){
+                
+                    document.write("found");
+                    break
+            }
+            else{
+                document.write("not found");    
+                break
+            }
+        
+        }
+      
+        
+    }
+    </script>
+</body>
+</html>

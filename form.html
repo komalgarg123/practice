@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form><br>
+        <label for="name">name</label>
+        <input type="text"><br><br>
+        <label for="number">number</label>
+        <input type="text"><br><br>
+        <label for="class">class</label>
+        <input type="text"><br><br>
+        <label for="password">password</label>
+        <input type="password" value="komal" id="mypass"><br><br>
+       
+        <button  onclick="fn()">click</button>
+    </form>
+    <Script>
+        
+        function fn(){
+        var a=document.getElementById("mypass");
+        if (a.type =="password") {
+         a.type= "text";
+        }
+        else {
+            a.type = "password";
+        }
+        }
+        
+    </Script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .ask{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 5%;
+            flex-wrap: wrap;
+        }
+        .icons{
+            display: flex;
+          
+        }
+        .icons p{
+           margin-left: 15px; 
+        }
+        input{
+            padding: 10px;
+            margin: 5px;
+            width: 500px;
+        }
+        .message{
+         padding: 10%;
+         
+        }
+        
+        .clr{
+            background-color: aqua;
+        }
+        @media screen and (max-width: 600px) {
+      input{
+        width: 100%;
+      }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d35eb8017.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+     <div class="clr">
+    <div class="ask">
+        <div>
+          <h3>Ask US</h3><br>
+          <div class="icons">
+            <div>
+                <i class="fa-sharp fa-solid fa-location-dot"></i><br><br><br>
+                <i class="fa-solid fa-phone"></i><br><br>
+                <i class="fa-solid fa-message"></i><br><br>
+                <i class="fa-solid fa-location-dot"></i><br>
+            </div>
+            <div>
+                <p>1234 Abcdef Town, Forest Area <br>
+                    Mid world 10005 
+                    </p><br>
+                <p>+0 (123) 456-7890 <br>
+                    +0 (123) 456-7890</p> 
+                    <p>info@yoursite.com</p><br>
+                    <p>www.yoursite.com</p><br>
+            </div>
+          </div>
+        </div>
+        <div>
+            <input type="text" placeholder="name"><br>
+            <input type="text" placeholder="email"><br>
+            <input class="message" type="text" placeholder="message"><br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

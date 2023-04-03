@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        nav{
+            background-color: black;
+            display: flex;
+            /* justify-content: ; */
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            /* position: fixed; */
+            /* width: 100%; */
+            /* flex-wrap: wrap; */
+
+        }
+        ul{
+            display: flex;
+          flex-wrap: wrap;
+            color: white;
+            
+        }
+        ul li{
+          list-style: none;
+          padding: 10px;
+         
+        }
+        h1{
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+        }
+        span{
+            color: #337ab7;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .main{
+            display: flex;
+            justify-content: space-around;
+            background-color: #337ab7;
+            /* position: fixed; */
+            width: 100%;
+           
+            
+        }
+        .team{
+            padding-top: 5%;
+        }
+        .team1{
+            padding-top: 1%;
+            width: 50%;
+        }
+        .team h2{
+            font-size: 40px;
+            color: white;
+            line-height: 52px;
+           margin: 0 0 26px 0;
+        }
+        .team p{
+            color: white;
+            margin: 0 0 26px 0;
+            line-height:25px ;
+        }
+        .team button{
+            /* display: block; */
+            font-size: 16px;
+            width: 178px;
+            height: 46px;
+             
+           border-radius: 3px;
+           text-align: center;
+           
+          font-weight: 600;
+         
+          background: transparent;
+         color: #fff;
+          border: 1px solid #fff;
+}
+  
+   
+   
+@media only screen and (max-width: 800px) {
+   .main{
+     display: block;
+   
+  } 
+}  
+   
+       
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>CREA<span>TI</span>VE</h1>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>PORTFOLIO</li>
+            <li>CLIENTS</li>
+            <li>TEAM</li>
+            <li>CONTACT</li>
+        </ul>
+       
+    </nav>
+    <div class="main">
+       
+        <div class="team">
+            <h2>We are the Leaders in IT <br> Industry</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text.</p>
+            <button>READ MORE</button>
+        </div>
+        <div class="team1">
+            <img src="mainimg.png" alt="" width="70%" height="80%">
+        </div>
+    </div>
+</body>
+</html>

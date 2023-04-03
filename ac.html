@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: green;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+#one {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: blueviolet;
+  margin-top: 87%;
+}
+
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+<!-- <p><button onclick="fc()">Click Me</button></p> -->
+
+<div id ="container">
+  <div id ="animate"></div>
+  <div id="one"></div>
+</div>
+
+<script>
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate"); 
+  const ytal = document.getElementById("one"); 
+    
+
+  // let pos = 0;
+  // clearInterval(id);
+  // id = setInterval(frame, 5);
+  // function frame() {
+  //   if (pos == 350) {
+  //     clearInterval(id);
+  //   } else {
+  //     pos++; 
+  //     elem.style.top = pos + "px"; 
+  //     elem.style.left = pos + "px"; 
+
+  //   }
+  // }
+
+  let pos = 0;
+  let pos1 = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  id1 = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350 || pos1==350) {
+      clearInterval(id);
+      clearInterval(id1);
+    } 
+    else {
+      pos++; 
+      pos1++; 
+
+
+
+
+      
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px";
+      ytal.style.bottom = pos1 + "px"; 
+      ytal.style.right = pos1 + "px";  
+
+    }
+  }
+
+  
+}
+
+// function fc() {
+//   let id = null;
+//   const elem = document.getElementById("one"); 
+//   const muki = document.getElementById("ko"); 
+    
+
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 5);
+//   function frame() {
+//     if (pos == 350) {
+//       clearInterval(id);
+//     } else {
+//       pos++; 
+//       elem.style.bottom = pos + "px"; 
+//       elem.style.left = pos + "px"; 
+
+//     }
+//   }
+
+  
+// }
+</script>
+
+</body>
+</html>

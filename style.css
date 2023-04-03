@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+.navbar{
+    display: flex;
+    background-color: skyblue;
+    padding: 10px 0;
+    /* justify-content: space-between; */
+}
+
+.nav-list li{
+    list-style: none;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    /* border: 1px solid red; */
+}
+
+.burger{
+    display: none;
+}
+
+.cross{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-list{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+  }
